@@ -33,3 +33,12 @@ a {
   height: 50px;
   margin-top: 120px;
 }
+.app_layout {
+  background-color: #f2f0e4;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
