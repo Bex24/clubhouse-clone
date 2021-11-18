@@ -6,6 +6,8 @@ import PhoneConfirmation from './pages/PhoneConfirmation';
 import Welcome from './pages/Welcome';
 import CodeConfirm from "./pages/CodeConfirm";
 import AllowNotification from "./pages/AllowNotification";
+import AppLayout from "./pages/Layouts/AppLayout";
+import Home from "./pages/Home";
 
 
 function App() {
@@ -28,6 +30,13 @@ function App() {
       </Switch>
     </PlanLayout>
     </Route>
+    <Route exact path = {["/home"]}>
+      <AppLayout>
+        <Switch>
+          <Route exact path ="/home" component = {()=> <Home />}></Route> 
+        </Switch>
+      </AppLayout>
+    </Route>
     </BrowserRouter>
 
   )
@@ -35,5 +44,3 @@ function App() {
   } 
 
 export default App;
-
-// ramas la minutul 8:40:37
