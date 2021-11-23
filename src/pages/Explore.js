@@ -10,7 +10,7 @@ export default function Explore() {
     return (
         <div className = {style.exploreContainer}>
             <div className = {style.header}>
-                <SubHeader pageTitle = "Explore"/> 
+                <SubHeader pageTitle = ""/> 
                 <Input style = {{
                      backgroundColor: "#f4f4f4",
                      borderRadius: "0.8em",

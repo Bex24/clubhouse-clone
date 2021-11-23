@@ -34,12 +34,14 @@ export default function Profile() {
             </div>
             <button>Add a bio</button>
             <div className = "mb-4">
+            <a href = "https://ro-ro.facebook.com/becsenescu.iulian" target="_blank">
                 <button className = "mb-0">
-                      <AiOutlineFacebook /> Add Facebook
-                </button>
+                      <AiOutlineFacebook />Facebook
+                </button></a>
+                <a href = "https://www.instagram.com/iulian.bex/" target="_blank">
                 <button className = "mb-0">
-                    <AiOutlineInstagram /> Add Instagram
-                </button>
+                    <AiOutlineInstagram />Instagram
+                </button></a>
             </div>
             <div className = {style.nominated}>
                 <img src = "/images/user-img.jpg" alt="" />

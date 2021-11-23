@@ -71,4 +71,3 @@ export default function Home() {
 )
 }
 
-// ramas la minutul 11:29:10
