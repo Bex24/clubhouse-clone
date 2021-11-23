@@ -2,11 +2,27 @@ import React from 'react'
 import style from "../style/explore.module.css"
 import {DownOutlined, FireOutlined } from "@ant-design/icons"
 import data from "../data/Explore.json"
+import { Input } from "antd"
+import SubHeader from '../components/SubHeader'
 
 export default function Explore() {
     const { people , conversation } = data;
     return (
         <div className = {style.exploreContainer}>
+            <div className = {style.header}>
+                <SubHeader pageTitle = "Explore"/> 
+                <Input style = {{
+                     backgroundColor: "#f4f4f4",
+                     borderRadius: "0.8em",
+                     padding: "0.3em 1em",
+                     border: "none",
+                     boxShadow: "none"
+                }}
+                    size= "large"
+                    placeholder = "Find People and Clubs"
+                    prefix={<img src = "images/search.png" width = "15px" />}
+                ></Input>      
+            </div>
             <h6>PEOPLE TO FOLLOW</h6>
             <div className = {style.peopleContainer}>
                 {people.map((item) => (
